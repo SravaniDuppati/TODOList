@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>TO-DO APP</title>
+        <link rel="stylesheet" href="style1.css" type="text/css">
+        <script src="https://kit.fontawesome.com/b49e819b3e.js" crossorigin="anonymous"></script>
+    </head>
+    <body id="id1">
+        <h1>TO-DO LIST</h1>
+        <form action="add_data" method="post" id="form">
+            <span id="span1">
+                <h6>DESCRIPTION *</h6>
+                <input id="input1" type="text" name="description" placeholder="What do you want to do?" required style="width: 40vw;">
+            </span>
+            <span id="span2">
+                <h6>CATEGORY *</h6>
+                <select name="category" id="input2">
+                    <option value="Personal">Choose Category</option>
+                    <option value="Personal">Personal</option>
+                    <option value="College">College</option>
+                    <option value="Excercise">Exercise</option>
+                    <option value="Work">Work</option>
+                    <option value="Home">Home</option>
+                    <option value="Other">other</option>
+                </select>
+            </span>
+            <span id="span3">
+                <h6>DUE DATE *</h6>
+                <input id="input3" type="date" name="duedate"/>
+            </span>
+            <div id="div4">
+                <button id="button1" type="submit" ><i class="fa-solid fa-plus fa-xl" style="color: #e9ecf1;"></i> ADD TASK</button>
+            </div>
+        </form>
+        <form action="delete_data" method="get">
+            <div id="span5">
+                <button id="button2"><i style="padding-top: 10px; padding-right: 4px;" class="fa-sharp fa-solid fa-trash fa-xl"></i>DELETE TASK</button>
+            </div>
+            </div>
+            <ul id="items">
+                <% for(let i of data){ %>
+                    <table id="tasks">
+                        <div style="border-top: 1px solid rgb(157, 152, 152);">
+                        </div>
+                       <tr>
+                        <th>
+                            <input type="checkbox" name="<%=i._id%>" id="checkbox">
+                        </th>
+                            <li>
+                                
+                                <label for="list">
+                                    <th style=" float: left;">
+                                        <h3 id="h1"><%= i.description %></h3>
+                                        <h3 id="h3">
+                                            <i class="fa-solid fa-calendar-days" style="color: #254883;"></i>        <%= i.duedate %>
+                                        </h3>
+                                    </th>
+                                    <th>
+                                        <h3 id="h2"><%= i.category %></h3>
+                                    </th>
+                                    
+                                </label>
+                                
+                            </li> 
+                        
+                        <br>
+                       </tr>
+                    </table>
+                <% } %>
+            </ul>
+             
+        </form>
+        
+    </body>
+</html>

@@ -1,0 +1,85 @@
+body{
+    text-align: center;
+}
+#form{
+    margin-right: 30%;
+    margin-left: 30%;
+}
+#span1{
+    text-align: left;
+    display: block;
+    margin-right: 20%;
+}
+#span2{
+    text-align: left;
+    float: left;
+}
+#span3{
+    display: inline-block;
+    margin-left: 40%;
+}
+#div4{
+    margin-right: 30%;
+    margin-top: 5%;
+}
+#span5{
+    margin-top: -75px;
+    margin-left: 20%;
+}
+#input1{
+    width:50px;
+    border-radius: 5px;
+    font-size: large;
+    margin-right: 10%;
+    margin-top: -2%;
+}
+#input2{
+    border-radius: 5px;
+    width: 120%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: -5%;
+}
+#input3{
+    border-radius: 5px;
+    width: 120%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: -5%;
+}
+#button1{
+    background-color: rgb(10, 61, 127);
+    color: white;
+    border-radius: 5px;
+    padding:20px;
+}
+#button2{
+    background-color: rgb(169, 34, 63);
+    border-radius: 5px;
+    color: white;
+    padding: 18px;
+}
+#items{
+    list-style-type: none;
+    font-size: large;
+    display: inline-block;
+}
+#tasks{
+    font-size: 13px;
+    width: 45vw;
+    margin-top: -4%;
+}
+#checkbox{
+    float: left;
+    width: 16px;
+    height: 16px;
+    border: 3px;
+}
+
+#h2{
+    border: 3px solid black;
+    margin-right: 25%;
+    margin-top: 3%;
+    background-color: rgb(122, 219, 19);
+    padding: 5%;
+}
